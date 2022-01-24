@@ -1,0 +1,40 @@
+{
+    "name": "kilofox/php-actuator-hyperf-provider",
+    "type": "library",
+    "description": "Hyperf provider for php-actuator",
+    "keywords": [
+        "health",
+        "actuator",
+        "php-actuator",
+        "hyperf",
+        "provider"
+    ],
+    "homepage": "https://github.com/kilofox/php-actuator-hyperf-provider",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tinsh",
+            "email": "kilofox2000@gmail.com"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+            "Kilofox\\Actuator\\": "src"
+        }
+    },
+    "require": {
+        "php" : "^7.4|^8.0",
+        "postalservice14/php-actuator": "^1.0"
+    },
+	"minimum-stability": "dev",
+    "prefer-stable": true,
+	"config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Kilofox\\Actuator\\ConfigProvider"
+        }
+    }
+}
